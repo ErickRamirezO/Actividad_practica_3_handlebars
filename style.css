@@ -1,0 +1,208 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  margin: 0px;
+  font-family: Lato, sans-serif;
+}
+
+/* estilo navbar */
+nav {
+  background-color: #333;
+  padding: 10px;
+  color: white;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Testimonios*/
+#contenidoTestimonios {
+  display: flex;
+  flex-direction: row;
+}
+
+/*Contenedor video*/
+.contenedorVideo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+  padding: 20px;
+}
+
+.video {
+  flex: 1;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.descripcion {
+  flex: 1;
+}
+
+.descripcion p {
+  margin-bottom: 10px;
+}
+
+.descripcion ol {
+  margin-left: 20px;
+}
+
+
+/*responsive*/
+@media (max-width: 600px) {
+  #contenidoTestimonios {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .textint-footer {
+    font-size: 15px;
+  }
+
+  .contenedorVideo {
+    flex-direction: column;
+  }
+}
+
+.contenedor-testimonio {
+  width: 450px;
+  height: 368px;
+  margin: 10px 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+}
+
+.contenedor-texto-testimonio {
+  text-align: center;
+  padding: 40px;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.nombre-testimonio {
+  font-size: 1.3rem;
+}
+
+.cargo-testimonio {
+  font-size: 1.3rem;
+  margin-top: 15px;
+  padding-bottom: 30px;
+}
+
+.texto-testimonio {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.center {
+  text-align: center;
+}
+
+footer,
+.text-footer,
+.img1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center !important;
+}
+
+.footer-con {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+  background-color: #333;
+}
+
+.footer-con div {
+  width: 33%;
+  margin: auto;
+  height: 200px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.img1 img {
+  width: 60%;
+  height: auto;
+}
+
+.iconos-vi {
+  display: flex;
+}
+
+.iconos-vi a {
+  align-content: center;
+  width: 10%;
+  margin: auto;
+  height: 10%;
+}
+
+.portada-test {
+  width: 100%;
+  height: 500px;
+  background: url('img/experiencias.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.acerca {
+  margin: auto;
+  width: 70%;
+  height: auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+}
+
+.acerca h1 {
+  text-align: center;
+  fond-size: 40px;
+}
+
+.acerca p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.5rem;
+}

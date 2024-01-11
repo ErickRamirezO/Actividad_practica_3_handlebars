@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Viviendo Historias</title>
+  <link rel="icon" href="img/logo.png" type="img/png">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo"><img src="img/logo.png"></div>
+      <div class="opciones">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#acerca">Acerca de</a></li>
+          <li><a href="#contenidoTestimonios">Testimonios</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="portada-test">
+
+  </div>
+  <br><br>
+  <div class="acerca">
+    <h1 id="acerca">Conócenos </h1><br>
+    <p>Nos sumergimos en el fascinante mundo de las experiencias, donde cada momento se convierte en una historia que da
+      forma a nuestras vidas. Somos apasionados por explorar la diversidad de vivencias que enriquecen el tejido de la
+      existencia. Desde las alegrías más vibrantes hasta los desafíos que nos despiertan, aquí celebramos la
+      autenticidad y la riqueza de las historias compartidas. Nuestra misión es inspirar, conectar y fomentar la empatía
+      a través de la narrativa personal. ¡Únete a nosotros mientras exploramos el tapiz de la vida y celebramos la
+      belleza de cada experiencia única!</p>
+  </div><br><br>
+  <h1 align="center">Testimonios</h1>
+  <div id="contenidoTestimonios" class="container-test">
+
+  </div>
+  <div class="contenedorVideo">
+    <div class="video">
+      <blockquote class="twitter-tweet">
+        <p lang="en" dir="ltr">&quot;Attention all coders! 👀 <br><br>Dive into the fascinating world of the
+          programmer&#39;s brain with <a href="https://twitter.com/Felienne?ref_src=twsrc%5Etfw">@Felienne</a>
+          <br><br>Full Episode: <a href="https://t.co/hZlhcWt9x5">https://t.co/hZlhcWt9x5</a> <a
+            href="https://t.co/migvzh0ChO">pic.twitter.com/migvzh0ChO</a>
+        </p>&mdash; Software Engineering Unlocked
+        Podcast (@se_unlocked) <a
+          href="https://twitter.com/se_unlocked/status/1658096675133575173?ref_src=twsrc%5Etfw">May 15, 2023</a>
+      </blockquote>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <div class="descripcion">
+      <center><img src="img/mujer.png">
+        <h2><b>Felienne Hermans</b></h2>
+        <p>Felienne Hermans, es profesora asociada en la Universidad de Leiden e investiga cómo piensan y aprenden los
+          desarrolladores.</p>
+      </center>
+      <p>
+        También hablamos de:
+      <ol>
+        <il><b>¿Por qué es tan difícil leer y comprender el código?</b></il>
+        <li>Su libro “El cerebro del programador”.</li>
+        <li>¿Cómo podemos aprender más fácilmente a programar?</li>
+        <li>Técnicas para comprender código complejo más rápido.</li>
+        <li>¿Cómo un vocabulario compartido puede ayudar a los equipos?</li>
+        <li>Proceso para escribir un libro que encantará a los desarrolladores.</li>
+      </ol>
+      </p><br>
+      <p>
+      <h2>Resumen del episodio completo "Cómo piensan y aprenden los programadores" (Transcripción)</h2>
+      </p>
+      <p>Michaela: [00:13:04] Tengo uno. Quiero decir, definitivamente tienes razón en la escuela secundaria. También
+        hay un maestro, ya sabes, y digamos 30 estudiantes o 50 estudiantes y así sucesivamente. Pero creo que es K en
+        Internet, creo que es similar con todos los nichos. Bien. Así que ahora se piensa en los nichos como, quiero
+        decir,
+        Aunque solo hay unos pocos, pensemos en cuántas personas hay que saben Java y no querían aprender Python. Y creo
+        que si piensas en Internet y si tienes una gran distribución, podría ser realmente relevante. Quiero decir, hay
+        recursos de programación. Son como, son realmente. Saliendo como hierba por todos lados.
+        ¿Bien? Hay tanta gente que se está subiendo a este tren para enseñar a otros a programarlo. Creo que tal vez sea
+        algún nicho inexplorado desde una perspectiva empresarial para que eso funcione.
+
+        Felienne: [00:13:53] Creo que definitivamente tienes razón.
+        Esa, como tu propia lucha, es una lucha muy reconocible para muchas personas donde los recursos para
+        principiantes son demasiado lentos y aburridos, pero tampoco estás lo suficientemente listo como para comenzar a
+        construir algo después de una introducción, como las chicas Django, algo así no ha sucedido. No te preparé lo
+        suficiente para ser un programador profesional de Python. Así que sí,
+        Creo que podría ser correcto que haya una brecha en el mercado y que alguien pueda sentirla.</p>
+    </div>
+  </div>
+  <!--Plantilla-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></script>
+  <script id="template" type="text/x-handlebars-template">
+    <div class="contenedor-testimonio">
+      <div class="contenedor-texto-testimonio">
+        <p class="nombre-testimonio"><b>{{nombre}}</b> en {{pais}}</p>
+        <p class="cargo-testimonio">{{cargo}} en <b>{{empresa}}</b></p>
+        <p class="texto-testimonio">"{{testimonio}}"</p>
+      </div>
+    </div>
+    <div class="contenedor-testimonio">
+      <div class="contenedor-texto-testimonio">
+        <p class="nombre-testimonio"><b>{{nombre2}}</b> en {{pais2}}</p>
+        <p class="cargo-testimonio">{{cargo2}} en <b>{{empresa2}}</b></p>
+        <p class="texto-testimonio">"{{testimonio2}}"</p>
+      </div>
+    </div>
+    <div class="contenedor-testimonio">
+      <div class="contenedor-texto-testimonio">
+        <p class="nombre-testimonio"><b>{{nombre3}}</b> en {{pais3}}</p>
+        <p class="cargo-testimonio">{{cargo3}} en <b>{{empresa3}}</b></p>
+        <p class="texto-testimonio">"{{testimonio3}}"</p>
+      </div>
+    </div>
+    </div>
+  </script>
+  <footer>
+    <div class="footer-con">
+      <div class="img1" align="center">
+        <p><img src="img/logo.png"></p>
+      </div>
+      <div class="center text-footer">
+        <p class="textint-footer">La riqueza de la vida reside en la capacidad de compartir nuestras experiencias, pues
+          en
+          cada historia yace
+          el potencial para inspirar, conectar y enriquecer la trama de la existencia</p>
+      </div>
+      <!-- Redes sociales -->
+      <div class="iconos-vi">
+        <a href="https://www.facebook.com/?locale=es_LA" target="new"> <i class="fab fa-facebook-f"></i></a>
+        <a href="https://web.whatsapp.com/" target="new"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/" target="new"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <section class="center">
+      <p>Copyright &copy; 2023 - Morales Pozo Ramirez </p>
+    </section>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
